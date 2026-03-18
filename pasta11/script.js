@@ -1,16 +1,23 @@
 class Automovel {
-    constructor(modelo, marca, ano, motor){
-        this.modelo = modelo
-        this.marca = marca
+
+        #modelo
+        #marca
+        cor
+        #ano
+        #motor
+    constructor(modelo, marca, ano, motor, cor){
+        this.#modelo = modelo
+        this.#marca = marca
         this.ano = ano
-        this.motor = motor
+        this.#motor = motor
+        this.cor = cor
     }
 
     acelerar() {
-        return `o veiculo ${this.modelo} ${this.marca} está acelerando`
+        return `o veiculo ${this.#modelo} ${this.#marca} está acelerando`
     }
     frear() {
-        return `o veiculo ${this.modelo} ${this.marca} está freando`
+        return `o veiculo ${this.#modelo} ${this.#marca} está freando`
     }
 }
 const carro1 = new Automovel("Corsa","Chevrolet","2000","Preto","1.6")
