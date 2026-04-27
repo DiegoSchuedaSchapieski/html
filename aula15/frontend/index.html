@@ -1,32 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gerenciamento de Usuários</title>
 </head>
+
 <body>
     <form id="form">
-        <input type="text" placeholder="nome" id="nome">
-        <input type="text" placeholder="email" id="email">
-        <input type="text" placeholder="senha" id="senha">
-        <button type="submit"> Registrar</button>
+        <input type="text" placeholder="nome" id="nome" required>
+        <input type="email" placeholder="email" id="email" required>
+        <input type="password" placeholder="senha" id="senha" required>
+        <button type="submit">Registrar</button>
     </form>
-    <br>
-    <br>
-    <br>
+
+    <br><br><br>
+    <form id="formatt">
+        <input type="text" id="idatt" disabled>
+        <input type="text" placeholder="nome" id="nomeatt" required>
+        <input type="email" placeholder="email" id="emailatt" required>
+        <input type="password" placeholder="senha" id="senhaatt" required>
+        <button type="submit">Aualizar</button>
+    </form>
+    <br><br><br>
+
 
     <table border="1">
         <thead>
             <tr>
                 <th>Nome</th>
                 <th>Email</th>
+                <th>Ações</th>
             </tr>
-        </thead>
+            <thead>
+            </thead>
         <tbody id="listaUsuarios">
-            
         </tbody>
     </table>
-    <script src="Scripts/index.js"> </script>
+
+    <script src="Scripts/index.js"></script>
 </body>
+
 </html>
